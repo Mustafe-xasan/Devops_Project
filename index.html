@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffron &amp; Co. — Modern Kitchen</title>
+  <meta name="description" content="Saffron & Co. — a modern kitchen serving fresh, seasonal food." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Saffron<span>&amp;</span>Co.</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-primary mobile-cta">Book a Table</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Book a Table</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Open daily · 11am – 11pm</p>
+      <h1 class="hero-title">Taste the warmth<br />of a home-cooked meal</h1>
+      <p class="hero-text">
+        Seasonal ingredients, slow-cooked recipes and a table that always has room for one more.
+        Welcome to Saffron &amp; Co.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        <a href="#contact" class="btn btn-ghost">Reserve a Table</a>
+      </div>
+    </div>
+
+    <a href="#menu" class="scroll-cue" aria-label="Scroll to menu">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Favourites</p>
+        <h2 class="section-title">Dishes worth coming back for</h2>
+        <p class="section-sub">A small, rotating menu built around what's fresh this week.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Handmade truffle pasta" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Truffle Tagliatelle</h3>
+              <span class="price">$18</span>
+            </div>
+            <p>Hand-rolled pasta, wild mushrooms, black truffle butter and aged parmesan.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Garden harvest bowl" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Garden Harvest Bowl</h3>
+              <span class="price">$14</span>
+            </div>
+            <p>Roasted heirloom vegetables, quinoa, avocado and a lemon-herb dressing.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Wood fired margherita pizza" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Wood-Fired Margherita</h3>
+              <span class="price">$16</span>
+            </div>
+            <p>72-hour dough, San Marzano tomatoes, fresh basil and buffalo mozzarella.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container about-inner">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80" alt="Chef plating a dish" loading="lazy" />
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title">Cooked slow, served with care</h2>
+        <p>
+          We started in 2014 with one rule: if it isn't good enough for our own table,
+          it doesn't leave the kitchen. Everything is made in-house — from the bread
+          to the sauces to the desserts.
+        </p>
+        <p>
+          Our produce comes from three family farms within 50 miles, and our menu
+          changes with the seasons because that's when food tastes best.
+        </p>
+        <div class="stats">
+          <div><strong>10+</strong><span>Years serving</span></div>
+          <div><strong>3</strong><span>Local farms</span></div>
+          <div><strong>4.9</strong><span>Average rating</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Visit Us</p>
+        <h2 class="section-title">Come hungry, leave happy</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>📍 Address</h3>
+          <p>128 Maple Street<br />Portland, OR 97205</p>
+        </div>
+        <div class="contact-card reveal">
+          <h3>🕒 Hours</h3>
+          <p>Mon – Thu: 11am – 10pm<br />Fri – Sun: 11am – 11pm</p>
+        </div>
+        <div class="contact-card reveal">
+          <h3>📞 Reservations</h3>
+          <p><a href="tel:+15551234567">(555) 123-4567</a><br /><a href="mailto:hello@saffronco.com">hello@saffronco.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">Saffron<span>&amp;</span>Co.</a>
+        <p>A modern kitchen serving honest, seasonal food since 2014.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>128 Maple Street<br />Portland, OR 97205</p>
+        <a href="tel:+15551234567">(555) 123-4567</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Get seasonal menu updates.</p>
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="your@email.com" required aria-label="Email address" />
+          <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+        <p class="form-msg" id="formMsg"></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Saffron &amp; Co. All rights reserved.</p>
+        <p>Made with fresh ingredients &amp; clean code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
