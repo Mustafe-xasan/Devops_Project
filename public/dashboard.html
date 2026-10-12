@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffron &amp; Co. — Dashboard</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="dash-body">
+
+  <!-- ===== LOGIN GATE ===== -->
+  <div class="dash-login" id="dashLogin">
+    <form class="dash-login-card" id="loginForm">
+      <a href="./" class="logo">Saffron<span>&amp;</span>Co.</a>
+      <h1>Staff Dashboard</h1>
+      <p class="dash-login-sub">Enter the passcode to view reservations and subscribers.</p>
+      <input type="password" id="passcode" name="passcode" placeholder="Passcode" autocomplete="current-password" required />
+      <button type="submit" class="btn btn-primary btn-block">Unlock</button>
+      <p class="form-msg" id="loginMsg"></p>
+      <a href="./" class="dash-back">&larr; Back to site</a>
+    </form>
+  </div>
+
+  <!-- ===== DASHBOARD ===== -->
+  <div class="dash-app" id="dashApp" hidden>
+    <header class="dash-topbar">
+      <div class="container dash-topbar-inner">
+        <div class="dash-brand">
+          <a href="./" class="logo">Saffron<span>&amp;</span>Co.</a>
+          <span class="dash-badge">Dashboard</span>
+        </div>
+        <div class="dash-actions">
+          <button id="refreshBtn" class="btn btn-ghost btn-sm" type="button">↻ Refresh</button>
+          <button id="lockBtn" class="btn btn-ghost btn-sm" type="button">🔒 Lock</button>
+          <a href="./" class="btn btn-primary btn-sm">View site</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container dash-main">
+      <p class="dash-status" id="dashStatus"></p>
+
+      <!-- Stat cards -->
+      <section class="dash-stats" aria-label="Overview">
+        <div class="stat-card">
+          <span class="stat-value" id="statReservations">–</span>
+          <span class="stat-label">Total reservations</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statUpcoming">–</span>
+          <span class="stat-label">Upcoming (today+)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statGuests">–</span>
+          <span class="stat-label">Total guests</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="statSubscribers">–</span>
+          <span class="stat-label">Subscribers</span>
+        </div>
+      </section>
+
+      <!-- Reservations table -->
+      <section class="dash-panel">
+        <div class="dash-panel-head">
+          <h2>Reservations</h2>
+          <input type="search" id="resSearch" class="dash-search" placeholder="Search name or email…" />
+        </div>
+        <div class="table-wrap">
+          <table class="dash-table" id="resTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Guests</th>
+                <th>Requests</th>
+              </tr>
+            </thead>
+            <tbody id="resBody">
+              <tr class="dash-empty"><td colspan="6">No reservations yet.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Subscribers -->
+      <section class="dash-panel">
+        <div class="dash-panel-head">
+          <h2>Newsletter subscribers</h2>
+        </div>
+        <ul class="sub-list" id="subList">
+          <li class="dash-empty">No subscribers yet.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="./dashboard.js"></script>
+</body>
+</html>
