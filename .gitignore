@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Database files (contains live data — never commit)
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+
+# Environment
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
